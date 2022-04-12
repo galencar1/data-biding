@@ -1,0 +1,32 @@
+<section class="property-biding" >
+
+    <article> <!--Testando Interpolação -->
+        <h3>
+            Interpolação/Interpolation
+        </h3>
+        
+        <p>
+            String renderizada com Interpolação: {{ url }}
+        </p>
+        
+        <p>
+            Resultado de 1 + 1 é: {{ 1+1 }}
+        </p>
+
+        <p>
+            Resultado de 1 + 1 NÃO é: {{ 1 + 1 + getValor() }}
+        </p>
+
+        <p>
+            Curso Angular e  gosto do curso: {{ cursoAngular && getCurtirCurso() }}
+        </p>
+    </article>
+
+        
+    <article> <!-- Testando o Property Biding-->
+        <h3>Property Biding</h3>
+        <img [src]="urlImagem"> <br> <!--Colocamos a propriedado do HTML entre colchetes para indicar o property-biding-->
+        <img bind-src="urlImagem2"> <!--Também é uma property-biding como a linha acima.-->
+    </article>
+
+</section>
