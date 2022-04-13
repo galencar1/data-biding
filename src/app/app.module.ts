@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { DataBidingComponent } from './data-biding/data-biding.component';
+import { InputOutputPropertiesModule } from './input-output-properties/input-output-properties.module';
 import { MeuFormModule } from './meu-form/meu-form.module';
 
 @NgModule({
@@ -11,11 +12,13 @@ import { MeuFormModule } from './meu-form/meu-form.module';
     AppComponent,
     DataBidingComponent,
     
+    
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    MeuFormModule
+    MeuFormModule,
+    InputOutputPropertiesModule
     
     
   ],
