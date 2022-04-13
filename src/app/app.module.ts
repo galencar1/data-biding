@@ -10,7 +10,8 @@ import { DataBidingComponent } from './data-biding/data-biding.component';
     DataBidingComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
