@@ -1,6 +1,6 @@
 <section class="property-biding" >
-    <!--
-    <article> <!--Testando Interpolação 
+    
+    <article> <!--Testando Interpolação -->
         <h3>
             Interpolação/Interpolation
         </h3>
@@ -23,12 +23,12 @@
     </article>
 
         
-    <article> <!-- Testando o Property Biding
+    <article> <!-- Testando o Property Biding -->
         <h3>Property Biding</h3>
-        <img [src]="urlImagem"> <br> <!--Colocamos a propriedado do HTML entre colchetes para indicar o property-biding
-        <img bind-src="urlImagem2"> <!--Também é uma property-biding como a linha acima.
+        <img [src]="urlImagem"> <br> <!--Colocamos a propriedado do HTML entre colchetes para indicar o property-biding-->
+        <img bind-src="urlImagem2"> <!--Também é uma property-biding como a linha acima.-->
     </article>
-    -->
+    
 
     <article> <!--Class e Style Biding Utilizando CSS-->
         <h3>
@@ -77,9 +77,41 @@
                 [style.display]="classe.value == 'alert-danger' ? 'block': 'none'">
                 Esse texto só aparece em caso de erro.
               </div>
-             
-             
-              
+        </div>
+    </article>
+
+
+    <article>
+        <h3>Event Biding</h3> <!--Escutando eventos disparados na página com Angular-->
+        <div>
+            <button (click)="botaoClicado()" 
+            class="btn btn-primary">
+                Me clique!
+            </button>
+
+            <br><br>
+
+            <input type="text"
+            (keyup)="onKeyUp($event)"
+            (keyup.enter)="salvarValor(campoInput.value)"
+            (blur)="salvarValor(campoInput.value)"
+            #campoInput />
+            
+
+            <p>Valor Atual: {{ valorAtual }}</p>
+            <p>Valor Salvo: {{ valorSalvo }}</p>
+
+            <br>
+
+            <span
+            (mouseover)="onMouseOverOut()"
+            (mouseout)="onMouseOverOut()"
+            [class.highlight] = "isMouseOver"
+            >
+                Passe o mouse sobre mim!
+            </span>
+
+
 
         </div>
     </article>
