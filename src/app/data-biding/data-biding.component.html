@@ -1,7 +1,7 @@
-
+<!--
 <section class="property-biding" >
     
-    <article> <!--Testando Interpolação -->
+    <article> <!--Testando Interpolação 
         <h3>
             Interpolação/Interpolation
         </h3>
@@ -24,14 +24,14 @@
     </article>
 
         
-    <article> <!-- Testando o Property Biding --> 
+    <article> <!-- Testando o Property Biding
         <h3>Property Biding</h3>
-        <img [src]="urlImagem"> <br> <!--Colocamos a propriedado do HTML entre colchetes para indicar o property-biding-->
-        <img bind-src="urlImagem2"> <!--Também é uma property-biding como a linha acima.-->
+        <img [src]="urlImagem"> <br> <!--Colocamos a propriedado do HTML entre colchetes para indicar o property-biding
+        <img bind-src="urlImagem2"> <!--Também é uma property-biding como a linha acima.
     </article>
     
 
-    <article> <!--Class e Style Biding Utilizando CSS-->
+    <article> <!--Class e Style Biding Utilizando CSS
         <h3>
             Class e Style Biding
         </h3>
@@ -83,7 +83,7 @@
 
 
     <article>
-        <h3>Event Biding</h3> <!--Escutando eventos disparados na página com Angular-->
+        <h3>Event Biding</h3> <!--Escutando eventos disparados na página com Angular
         <div>
             <button (click)="botaoClicado()" 
             class="btn btn-primary">
@@ -118,9 +118,12 @@
     </article>
 
 </section>
-
+-->
 
 
 <app-meu-form> </app-meu-form>
 
 <app-curso [nome] = "nomeDoCurso"></app-curso>
+<contador [valor]="valorInicial"
+    (mudouValor)="onMudouValor($event)"
+></contador>

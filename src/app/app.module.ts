@@ -4,21 +4,23 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { DataBidingComponent } from './data-biding/data-biding.component';
-import { InputOutputPropertiesModule } from './input-output-properties/input-output-properties.module';
+import { InputOutputPropertiesComponent } from './input-output-properties/input-output-properties.component';
 import { MeuFormModule } from './meu-form/meu-form.module';
+import { OutputPropertyComponent } from './output-property/output-property.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DataBidingComponent,
-    
+    OutputPropertyComponent,
+    InputOutputPropertiesComponent
     
   ],
   imports: [
     BrowserModule,
     FormsModule,
     MeuFormModule,
-    InputOutputPropertiesModule
+    
     
     
   ],
