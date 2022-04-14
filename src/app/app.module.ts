@@ -7,13 +7,15 @@ import { DataBidingComponent } from './data-biding/data-biding.component';
 import { InputOutputPropertiesComponent } from './input-output-properties/input-output-properties.component';
 import { MeuFormModule } from './meu-form/meu-form.module';
 import { OutputPropertyComponent } from './output-property/output-property.component';
+import { CicloComponent } from './ciclo/ciclo.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DataBidingComponent,
     OutputPropertyComponent,
-    InputOutputPropertiesComponent
+    InputOutputPropertiesComponent,
+    CicloComponent
     
   ],
   imports: [
